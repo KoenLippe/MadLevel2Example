@@ -50,7 +50,7 @@ class ReminderActivity : AppCompatActivity() {
     }
 
     private fun createItemTouchHelper(): ItemTouchHelper {
-        val callback = object: ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT){
+        val callback = object: ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT){
 
             override fun onMove(
                 recyclerView: RecyclerView,
